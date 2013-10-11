@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	 <link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans' rel='stylesheet' type='text/css' />
+	 
+     <title>Dota 2 pro teams viz</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px 'Open Sans', Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0;}
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+		a.explore { color: #7f54a2; text-decoration: none; border-bottom: 1px dotted #999; }
+        a.explore:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-family:Lato, sans-serif; color:#8c2413; font-size: 25px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+		.fn { color:#a92b17; }
+     </style>
+	 
+	 <!-- fontAwesome -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+	 
+</head>
+
+<body>
+
+    <div id="page-wrap">
+    
+        <img src="images/dota2_net.png" alt="dotaLogo" id="pic" />
+    
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn">Dota 2 pro teams match network</h1>
+        
+            
+        </div>
+                
+        <div id="objective">
+            <p>
+                A small hobby project to visualize Dota 2 pro teams network.
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>watch</dt>
+            <dd>
+				<iframe width="480" height="360" src="http://www.youtube.com/embed/wE3fmFTtP9g?rel=0" frameborder="0" allowfullscreen></iframe>
+                <p>Match evolution from 08.2011 to 10.2013</p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>explore</dt>
+            <dd>
+                <a href="sigma/index.html" class="explore"><i class="icon-search icon-large"></i> explore network</a><br />
+                <p>with sigma.js</p>
+                
+                <a href="gmap/index.html" class="explore"><i class="icon-search icon-large"></i> explore network</a><br />
+                <p>with google maps</p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>info</dt>
+            <dd>
+                Data collected from <a href="http://www.joindota.com/en/matches">joindota</a>. <br />
+				Nodes represent teams. Directed edges (connections) represent match outcome.<br />
+				<i>Example:</i> Team Winner wins over team Loser 3:1. This will result in <br/>
+				edge Loser <i class="icon-long-arrow-right"></i> Winner with weight 3 (Loser gives 3 points to Winner) and <br/>
+				edge Winner <i class="icon-long-arrow-right"></i> Loser with weight 1 (Winner gives 1 point to Loser). 
+				
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>authors</dt>
+            <dd>
+					<ul>
+						<li>statik <a href="mailto:static.hr@gmail.com"><i class="icon-envelope"></i> e-mail</a> 
+						<a href="https://twitter.com/statichr"><i class="icon-twitter-sign"></i> twitter</a></li>
+						<li>with help from <i class="icon-heart"></i> asy</li> 
+					</ul>
+			</dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        
+        <div class="clear"></div>
+    
+    </div>
+
+</body>
+
+</html>
